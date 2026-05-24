@@ -1,8 +1,6 @@
-# Data Warehouse and Mart Build: Production ELT Pipeline w/ Weather API Data
+# Production ELT Pipeline: Weather API Data Warehouse
 
-
-
-## 💡 Problem and Context
+## Problem and Context
 **Challenge:**  Weather forecast data changes daily across multiple locations and metrics, requiring an automated pipeline that captures historical forecasts, handles gaps, and produces clean analytics ready tables.
 
 **Solution:** 
@@ -23,9 +21,11 @@
 - 💻 **Development:** VS Code with dbt Power User extension
 - 📋 **Observability:** Pipeline run history logged to MotherDuck with status, duration, and error tracking
 
-## Documentation -
+## Documentation
 For all the SQL Queries, please refer to this page: [here](/SQL_Queries_Workflow.md)
 
+**ELT Pipeline:** 
+![diagram](images/diagram.png)
 
 **dbt Workflow:** 
 ![dbt_workflow](images/dbt_model.png)
