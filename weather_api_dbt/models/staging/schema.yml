@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: base_raw_data_pull_output
+    description: "Cleaned and standardized weather data from Open-Meteo API. Deduplicated to latest pull per city per date."
+    columns:
+      - name: forecast_date
+        description: "The date the weather data is for"
+        data_tests:
+          - not_null
+      - name: city
+        description: "City name for the weather observation"
+        data_tests:
+          - not_null
+      - name: temperature_2m_mean_c
+        description: "Daily mean temperature in Celsius"
+        data_tests:
+          - not_null

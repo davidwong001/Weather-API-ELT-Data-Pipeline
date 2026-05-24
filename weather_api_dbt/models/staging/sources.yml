@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: raw_weather_output
+    description: "raw data pull directly from the api"
+    database: weather_api
+    schema: raw
+    tables:
+      - name: data_pull_output
+  - name: dim_date
+    description: "dim dates table"
+    database: my_db
+    schema: main
+    tables:
+      - name: dim_date
+      

@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: weather_forecast
+    description: "Final weather forecast data table that joins with the weather code"
+    columns:
+      - name: weather_code_def
+        description: "The weather code from seeds. It should not be null. Unless there's a new weather code."
+        data_tests:
+          - not_null:
+              severity: warn # this allows the dbt build to continue without exiting
+              store_failures: true # this saves the rows where the weather_code_def is not null

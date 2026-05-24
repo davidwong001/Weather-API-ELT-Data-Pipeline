@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.env
+*.ipynb
+*.txt
+logs/
+.user.yml
+.vscode
+testing/
+diagram_images/
